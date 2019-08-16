@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleAnimations.css" />
+    <title>Simon Says</title>
+  </head>
+  <body>
+    <div id="scoreboard">
+      <h2>Rounds Completed: 0</h2>
+    </div>
+    <div id="parent_container">
+      <h1>Simon says</h1>
+      <div id="toy">
+        <div id="backgroundCircle">
+          <div class="canvas_container" id="green">
+            <!-- <canvas id="green-arch" width="100%"></canvas> -->
+            <div
+              class="quarter-circle-bottom-right cirkel"
+              id="green-arch"
+            ></div>
+          </div>
+          <div class="canvas_container" id="blue">
+            <!-- <canvas id="red-arch" width="100%"></canvas> -->
+            <div class="quarter-circle-top-right cirkel" id="blue-arch"></div>
+          </div>
+          <div class="canvas_container" id="yellow">
+            <!-- <canvas id="yellow-arch" width="100%"></canvas> -->
+            <div
+              class="quarter-circle-bottom-left cirkel"
+              id="yellow-arch"
+            ></div>
+          </div>
+          <div class="canvas_container" id="red">
+            <!-- <canvas id="blue-arch" width="100%"></canvas> -->
+            <div class="quarter-circle-top-left cirkel" id="red-arch"></div>
+          </div>
+        </div>
+      </div>
+      <div id="start_stop_container">
+        <button class="btn start">START</button>
+      </div>
+      <div id="timeLeft_container">
+        <div id="progress"></div>
+      </div>
+    </div>
+    <script src="toy.js"></script>
+    <script src="./dominteract.js"></script>
+    <script src="./canvasDrawing.js"></script>
+    <script src="timebar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+@-webkit-keyframes redglow /* Safari and Chrome */ {
+  0% {
+    background: red;
+  }
+  50% {
+    background: #800000;
+    box-shadow: 0px 0px 60px 10px #800000;
+  }
+  100% {
+    background: red;
+  }
+}
+
+.highlighting-red {
+  animation: redglow 1s;
+  -moz-animation: redglow 1s; /* Firefox */
+  -webkit-animation: redglow 1s; /* Safari and Chrome */
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes greenglow /* Safari and Chrome */ {
+  0% {
+    background: green;
+  }
+  50% {
+    background: darkgreen;
+    box-shadow: 0px 0px 60px 10px darkgreen;
+  }
+  100% {
+    background: green;
+  }
+}
+
+.highlighting-green {
+  animation: greenglow 1s;
+  -moz-animation: greenglow 1s; /* Firefox */
+  -webkit-animation: greenglow 1s; /* Safari and Chrome */
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes yellowglow /* Safari and Chrome */ {
+  0% {
+    background: yellow;
+  }
+  50% {
+    background: darkgoldenrod;
+    box-shadow: 0px 0px 60px 10px darkgoldenrod;
+  }
+  100% {
+    background: yellow;
+  }
+}
+
+.highlighting-yellow {
+  animation: yellowglow 1s;
+  -moz-animation: yellowglow 1s; /* Firefox */
+  -webkit-animation: yellowglow 1s; /* Safari and Chrome */
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes blueglow /* Safari and Chrome */ {
+  0% {
+    background: blue;
+  }
+  50% {
+    background: darkblue;
+    box-shadow: 0px 0px 60px 10px darkblue;
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+  }
+  100% {
+    background: blue;
+  }
+}
+
+.highlighting-blue {
+  animation: blueglow 1s;
+  -moz-animation: blueglow 1s; /* Firefox */
+  -webkit-animation: blueglow 1s; /* Safari and Chrome */
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+}
